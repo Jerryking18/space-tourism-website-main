@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+<!--STYLESHEETS-->
+  <link rel="stylesheet" href="../starter-code/css/crew.css">
+  <link rel="stylesheet" href="../starter-code/css/bootstrap.min.css">
+  <!-------------->
+  <title>Frontend Mentor | Space tourism website</title>
+  <!--JAVASCRIPT LIBRARIES-->
+  <script src="../starter-code/JS/Script.js"></script>
+  <script src="../starter-code/JS/bootstrap.min.js"></script>
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="../node_modules/jquery/dist/jquery.js"></script>
+  <script>
+   $(document).ready(function(){
+       $(".toggle1").click(function(){
+        $(".toggle1").removeClass("red1").addClass("active").css("transition",".3s ease-in-out"); 
+        $(".toggle2, .toggle3, .toggle4").removeClass("active").addClass("red1").css("transition",".3s ease-in-out");
+        //CREW-COMMANDER
+        $(".we, .sr2, .sr3").removeClass("sr2","sr3").addClass("sr1").css("Transition", "all .3s ease-in-out");
+        $(".total, .img3, .img2").removeClass("img3","img2").addClass("img1").css("transition", "all .3s ease-in-out");
+        $(".total").attr("src", "../starter-code/assets/crew/image-douglas-hurley.webp").css("transition", "all .3s ease-in-out");
+        $(".are").text("Crew captain").css("transition", "all .3s ease-in-out");
+        $(".crew").text(" Douglas Hurley");
+        $(".21").text("Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2. ")
+       
+       
+      });
+      //
+      $(".toggle2").click(function(){
+        $(".toggle2").removeClass("red1").addClass("active").css("transition","all .3s ease-in-out");
+        $(".toggle1, .toggle3, .toggle4").removeClass("active").addClass("red1").css("transition","all .3s ease-in-out");
+        //CREW-ENGINEER
+        $(".we, .sr1, .sr3").removeClass("sr1", "sr3").addClass("sr2");
+        $(".are").text(" Flight Engineer");
+        $(".crew").text("Anousheh Ansari");
+        $(".21").text("Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist,the first self-funded woman to fly to the ISS, and the first Iranian in space. ")
+        $(".total").attr("src", "../starter-code/assets/crew/image-anousheh-ansari.webp");
+        $(".total,.img1, .img3").removeClass("img1, img3").addClass("img2");
+        
+      });
+      //
+      $(".toggle3").click(function(){
+        $(".toggle3").removeClass("red1").addClass("active").css("transition",".3s ease-in-out");
+        $(".toggle1, .toggle2, .toggle4").removeClass("active").addClass("red1").css("transition",".3s ease-in-out");
+        //CREW-PILOT
+        $(".we").removeClass("sr1,sr2").addClass("sr3");
+        $(".are").text("Pilot").css("z-index", "1");
+        $(".crew").text(" Victor Glover").fadeIn(1000);
+        $(".21").text(" Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer. ")
+        $(".total").attr("src", "../starter-code/assets/crew/image-victor-glover.webp");
+        $(".total").removeClass("img1,img2").addClass("img3");
+      });
+      //
+      $(".toggle4").click(function(){
+        $(".toggle4").removeClass("red1").addClass("active").css("transition",".3s ease-in-out");
+        $(".toggle1, .toggle2, .toggle3").removeClass("active").addClass("red1").css("transition",".3s ease-in-out");
+      });
+      //
+    });
+  </script>
+</head>
+<body>
+  <nav>
+    <img src="assets/shared/logo.svg" alt=""> <div class="sp1"></div>
+    <ul>
+      <li><a href="../starter-code/index.html"> <b>00</b> Home</a></li>
+      <li><a href="../starter-code/destination-europa.html"> <b>01</b> Destination</a></li>
+      <li><a href="../starter-code/crew-commander.html" > <b>02</b> Crew</a></li> 
+      <li><a href="../starter-code/technology-capsule.html" > <b>03</b> Technology</a></li> 
+    </ul>
+  </nav>
+  <h2 class="pick_your_destination"> <b class="one"> 02</b> Meet your crew</h2>
+  <br>
+    
+<div class="sub12">
+  <div class="sr">
+    <img src="../starter-code/assets/crew/image-douglas-hurley.webp"  alt="Chania" class="total img1">
+  </div>
+  <br>
+  <div class="we sr1">
+    <span class="are">Crew captain</span>
+    <br>
+    <span class="crew"> Douglas Hurley</span>
+    <br>
+    <span class="21">
+    Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
+    and former NASA astronaut. He launched into space for the third time as 
+    commander of Crew Dragon Demo-2.
+    </span>
+    <div class="menu-or">
+   <span class="toggle1 red1 active" role="button"></span>
+      <span class="toggle2 red1" role="button"></span>
+      <span class="toggle3 red1" role="button"></span>
+      <span class="toggle4 red1" role="button"></span>
+      </div>    
+  </div>
+</div>
+
+</body>
+</html>
