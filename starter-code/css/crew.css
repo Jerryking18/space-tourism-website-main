@@ -123,15 +123,21 @@ nav ul{
 }
 .img2{
     margin-left: 200%;
-    margin-top: 80px;
+    margin-top: 70px;
     position: relative;
     width: 400px;
 }
 .img3{
-    margin-left: 200%;
+    margin-left: 180%;
     margin-top: 15px;
     position: relative;
     width: 410px;   
+}
+.img4{
+    margin-left: 200%;
+    margin-top: 25px;
+    position: relative;
+    width: 400px; 
 }
 .sr1{
     width: 352px;
@@ -139,13 +145,18 @@ nav ul{
     right: 245px;
     top: 65px;
 }
-
+.sr1 .menu-or{
+    position: relative;
+    top: -32px;
+    left: -15px;
+}
 .sr2{
     width: 352px;
     position: relative;
     right: 280px;
     top: 60px;   
 }
+
 .sr2 .menu-or{
     position: relative;
     top: -50px;
@@ -154,30 +165,43 @@ nav ul{
 .sr3{
     width: 352px;
     position: relative;
+    right: 290px;
+    top: 36px;  
+}
+.sr3 .menu-or{
+    position: relative;
+    top: -50px;
+    right: 20px;  
+}
+.sr4{
+    width: 352px;
+    position: relative;
     right: 280px;
-    top: 40px;  
+    top: 60px; 
 }
-.sr3 .are3{
-margin-left: -9px;
-font-size: 40px;
-font-weight: 200;
+.sr4 .crew{
+    font-size: 34px;
 }
-.sr3 .crew3{
-    margin-left: -12px;
+.sr4 .menu-or{
+    position: relative;
+    top: -42px;
+    right: 20px; 
+}
+.se{
+    width: 200px;
 }
 .crew{
     font-size: 40px;
     font-weight: lighter;
     color: white;
-    width: 500%;
     margin-left: 3px;
-    margin-top: -330px;
+    margin-top: -329px;
     text-transform: uppercase;
 }
 .are{
-    font-size: 28px;
-    font-weight: 300;
-    color: rgba(100, 100, 100, 2);
+    font-size: 30px;
+    font-weight: 350;
+    color: rgba(100, 100, 100, 5);
     width: 300px;
     margin-left: 3px;
     margin-top: -460px;
@@ -189,7 +213,9 @@ font-weight: 200;
     margin-top: 120px;
     position: fixed;
 }
- 
+ .we{
+     margin-top: -10px;
+ }
 .red1{
     cursor: pointer;
     width: 20px;
